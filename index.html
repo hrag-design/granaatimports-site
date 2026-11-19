@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Granaat Imports – Authentic Lebanese products in the Netherlands</title>
+<meta name="description" content="Granaat Imports brings authentic tomato paste and pepper paste from Lebanon to shops, restaurants and wholesalers in the Netherlands.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Inter:wght@400;500;600&display=swap">
+<style>
+:root{--red:#B3261E;--red-dark:#8E1D17;--green:#2F5233;--ink:#1C1B19;--muted:#4A4640;--line:#ECE7E1;--sand:#F6EFE8}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.5}
+h1,h2,h3{font-family:'Bricolage Grotesque',Inter,sans-serif;margin:0}
+p{margin:0}
+a{color:var(--red)}a:hover{color:var(--red-dark)}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.btn{display:inline-block;text-decoration:none;padding:15px 26px;border-radius:999px;font-weight:600;font-size:17px;min-height:48px}
+.btn-red{background:var(--red);color:#fff}.btn-red:hover{background:var(--red-dark);color:#fff}
+.btn-line{border:1.5px solid var(--ink);color:var(--ink)}.btn-line:hover{background:var(--ink);color:#fff}
+.btn-white{background:#fff;color:var(--ink)}.btn-white:hover{background:var(--sand);color:var(--ink)}
+header{border-bottom:1px solid var(--line)}
+.nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding:18px 24px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:22px}
+.brand:hover{color:var(--ink)}
+nav{display:flex;flex-wrap:wrap;align-items:center;gap:24px;font-weight:500}
+nav a{color:var(--ink);text-decoration:none}
+nav a.btn{padding:11px 20px;font-size:16px;min-height:44px}
+.hero{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:56px;align-items:center;padding-top:80px;padding-bottom:88px}
+.eyebrow{font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--green)}
+.hero h1{font-size:clamp(40px,5.5vw,68px);line-height:1.02;font-weight:800;letter-spacing:-.02em;margin:20px 0}
+.lead{font-size:19px;line-height:1.6;color:var(--muted);max-width:520px}
+.actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+.jars{background:var(--sand);border-radius:28px;min-height:400px;display:flex;align-items:flex-end;justify-content:center;gap:28px;padding:48px 32px 56px}
+.jar{display:flex;flex-direction:column;align-items:center}
+.lid{background:var(--green);border-radius:8px 8px 2px 2px}
+.body{border-radius:14px 14px 22px 22px;display:flex;align-items:center;justify-content:center}
+.label{background:#fff;border-radius:10px;padding:14px 10px;text-align:center}
+.label b{display:block;font-family:'Bricolage Grotesque',sans-serif;font-size:17px}
+.label span{font-size:12px;color:var(--muted)}
+.band{background:var(--green);color:#fff}
+.band .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:32px;padding-top:48px;padding-bottom:48px}
+.band h3{font-size:21px;margin-bottom:8px}
+.band p{color:#DCE6DA}
+section.block{padding-top:96px;padding-bottom:96px}
+.head{max-width:640px;margin-bottom:40px}
+.head h2{font-size:clamp(32px,4vw,46px);font-weight:800;letter-spacing:-.01em;margin-bottom:12px}
+.head p{font-size:18px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.card{border:1px solid var(--line);border-radius:24px;overflow:hidden;display:flex;flex-direction:column}
+.card .pic{background:var(--sand);height:200px;display:flex;align-items:flex-end;justify-content:center;padding-bottom:28px}
+.card .txt{padding:28px;display:flex;flex-direction:column;gap:12px}
+.card h3{font-size:28px}
+.card p{color:var(--muted)}
+.origin{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--green)}
+.card.more{border:1.5px dashed #CFC8BF;padding:28px;justify-content:center;gap:14px;min-height:300px}
+.sand{background:var(--sand)}
+.story{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:56px;align-items:center}
+.story p{font-size:18px;line-height:1.65;color:var(--muted);margin-top:18px}
+.story .art{background:#E9DFD4;border-radius:24px;min-height:320px;display:flex;align-items:center;justify-content:center}
+.tile{border:1px solid var(--line);border-radius:20px;padding:28px}
+.tile h3{font-size:22px;margin-bottom:10px}
+.tile p{color:var(--muted)}
+.contact{background:var(--ink);color:#fff}
+.contact .head p{color:#D6D1CA}
+.contact a.mail{color:#fff;font-size:20px;font-weight:600}
+footer{background:var(--ink);color:#BDB7AF;border-top:1px solid #34322E}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:28px;padding-bottom:28px;font-size:14px}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap nav" style="padding-left:24px;padding-right:24px">
+<a class="brand" href="#top"><img src="favicon.svg" width="34" height="34" alt="">Granaat Imports</a>
+<nav aria-label="Main">
+<a href="#products">Products</a>
+<a href="#about">About us</a>
+<a href="#wholesale">Wholesale</a>
+<a class="btn btn-red" href="#contact">Contact us</a>
+</nav>
+</div>
+</header>
+
+<main id="top">
+<section class="wrap hero">
+<div>
+<p class="eyebrow">Specialty imports · The Netherlands</p>
+<h1>Authentic products, straight from the source.</h1>
+<p class="lead">We import traditional products directly from the producers who make them — for shops, restaurants and wholesalers in the Netherlands who want the real taste.</p>
+<div class="actions">
+<a class="btn btn-red" href="#contact">Request a price list</a>
+<a class="btn btn-line" href="#products">See our products</a>
+</div>
+</div>
+<div class="jars" aria-hidden="true">
+<div class="jar"><div class="lid" style="width:132px;height:26px"></div><div class="body" style="width:150px;height:200px;background:var(--red)"><div class="label" style="width:112px"><b>Tomato</b><span>paste</span></div></div></div>
+<div class="jar"><div class="lid" style="width:110px;height:24px"></div><div class="body" style="width:128px;height:168px;background:#C2410C"><div class="label" style="width:98px"><b>Pepper</b><span>paste</span></div></div></div>
+</div>
+</section>
+
+<section class="band">
+<div class="wrap">
+<div><h3>Direct from the producer</h3><p>We work directly with the makers and handle the import ourselves.</p></div>
+<div><h3>Traditional quality</h3><p>Products made the way they have been made for generations.</p></div>
+<div><h3>Delivered in the Netherlands</h3><p>Delivered to your shop, kitchen or warehouse.</p></div>
+</div>
+</section>
+
+<section id="products" class="wrap block">
+<div class="head">
+<h2>Our range</h2>
+<p>A growing selection of authentic products. Available for retail and in bulk.</p>
+</div>
+<div class="grid">
+<article class="card">
+<div class="pic" aria-hidden="true"><div class="jar"><div class="lid" style="width:80px;height:16px"></div><div class="body" style="width:92px;height:120px;background:var(--red)"></div></div></div>
+<div class="txt">
+<p class="origin">Origin: Lebanon</p>
+<h3>Tomato paste</h3>
+<p>Rich, concentrated tomato paste — the base of countless Lebanese and Mediterranean dishes.</p>
+<p style="color:var(--ink)"><strong>Sizes:</strong> retail and bulk — ask us for details.</p>
+</div>
+</article>
+<article class="card">
+<div class="pic" aria-hidden="true"><div class="jar"><div class="lid" style="width:80px;height:16px"></div><div class="body" style="width:92px;height:120px;background:#C2410C"></div></div></div>
+<div class="txt">
+<p class="origin">Origin: Lebanon</p>
+<h3>Pepper paste</h3>
+<p>Red pepper paste full of flavour, for stews, marinades, dips and more.</p>
+<p style="color:var(--ink)"><strong>Sizes:</strong> retail and bulk — ask us for details.</p>
+</div>
+</article>
+<article class="card more">
+<h3>More on the way</h3>
+<p>We are adding new products and origins. Looking for something specific? Ask us.</p>
+<a href="#contact" style="font-weight:600">Get in touch →</a>
+</article>
+</div>
+</section>
+
+<section id="about" class="sand">
+<div class="wrap block story">
+<div class="art" aria-hidden="true"><img src="favicon.svg" width="160" height="160" alt=""></div>
+<div>
+<div class="head" style="margin-bottom:0"><h2>About us</h2></div>
+<p>Granaat Imports is based in the Netherlands and brings authentic products from Lebanon to Dutch shops and kitchens.</p>
+<p>We work with producers we know, so we can stand behind every product we bring in.</p>
+</div>
+</div>
+</section>
+
+<section id="wholesale" class="wrap block">
+<div class="head">
+<h2>Who we supply</h2>
+<p>Get in touch for prices, samples and minimum order quantities.</p>
+</div>
+<div class="grid">
+<div class="tile"><h3>Shops &amp; supermarkets</h3><p>Middle Eastern, Mediterranean and international grocers.</p></div>
+<div class="tile"><h3>Restaurants &amp; caterers</h3><p>Bulk packaging for professional kitchens.</p></div>
+<div class="tile"><h3>Wholesalers</h3><p>Larger quantities for distribution across the Benelux.</p></div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<div class="wrap block">
+<div class="head">
+<h2>Let’s talk</h2>
+<p>Ask for a price list or samples. We’d love to hear from you.</p>
+</div>
+<p style="margin-bottom:28px"><a class="mail" href="mailto:info@granaatimports.nl">info@granaatimports.nl</a></p>
+<a class="btn btn-white" href="mailto:info@granaatimports.nl?subject=Price%20list%20request">Email us</a>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<p>© 2026 Granaat Imports</p>
+<p>Specialty imports for the Netherlands</p>
+</div>
+</footer>
+
+</body>
+</html>
